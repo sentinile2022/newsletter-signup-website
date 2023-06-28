@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link href="output.css" rel="stylesheet" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>
+      Frontend Mentor | Newsletter sign-up form with success message
+    </title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main
+      class="flex justify-center items-center bg-darkGrayBlue min-h-[100vh]"
+    >
+      <div
+        class="signup-box min-w-[320px] mid:w-[80%] mid:max-w-[1000px] lg:flex lg:w-[840px] lg:gap-20 lg:p-10 bg-white"
+      >
+        <div class="mb-35 lg:order-2">
+          <picture>
+            <source
+              media="(min-width: 850px)"
+              srcset="./assets/images/illustration-sign-up-desktop.svg"
+            />
+            <img
+              src="./assets/images/illustration-sign-up-mobile.svg"
+              alt=""
+              class="w-full mid:w-[0px] lg:w-full"
+            />
+          </picture>
+        </div>
+        <div class="ml-20 mr-20 mb-20">
+          <div class="mb-35">
+            <h1
+              class="text-3xl lg:text-4xl font-bold text-darkBlue text-bold mb-20"
+            >
+              Stay updated!
+            </h1>
+            <p class="mb-35">
+              Join 60,000+ product managers receiving monthly updates on:
+            </p>
+            <div class="flex flex-col gap-20">
+              <div class="flex">
+                <img
+                  src="./assets/images/icon-list.svg"
+                  alt=""
+                  class="self-start"
+                />
+                <p class="ml-20 items-center">
+                  Product discovery and building what matters
+                </p>
+              </div>
+              <div class="flex">
+                <img
+                  src="./assets/images/icon-list.svg"
+                  alt=""
+                  class="self-start"
+                />
+                <p class="ml-20 items-center">
+                  Measuring to ensure updates are a success
+                </p>
+              </div>
+              <div class="flex">
+                <img
+                  src="./assets/images/icon-list.svg"
+                  alt=""
+                  class="self-start"
+                />
+                <p class="ml-20 items-center">And much more!</p>
+              </div>
+            </div>
+          </div>
+          <form action="">
+            <label
+              for="emailfield-1"
+              class="block mb-10 text-xs text-darkBlue font-bold"
+            >
+              Email Address
+            </label>
+            <div class="mb-20 pb-20 pt-20 pl-20 border emailbox" id="emailbox">
+              <input
+                required
+                type="email"
+                name=""
+                id="emailfield-1"
+                class="emailfield w-full"
+                placeholder="email@company.com"
+                class="w-full"
+              />
+            </div>
+            <button href="#" id="btn-1" class="btn-1 hover:btn-anim-1">
+              <p class="text-white font-bold">
+                Subscribe to monthly newsletter
+              </p>
+            </button>
+          </form>
+        </div>
+      </div>
+      <!-- component 2 comment eo diswe;lfso-->
+      <div
+        class="registered-box bg-white min-h-screen p-20 mid:p-35 flex flex-col justify-between mid:min-w-[500px] mid:min-h-[500px] mid:w-[60%] mid:rounded-md hidden"
+      >
+        <div></div>
+        <div>
+          <div class="mb-35">
+            <img src="./assets/images/icon-success.svg" alt="" />
+          </div>
+          <div>
+            <h2 class="text-3xl text-darkBlue font-bold mb-20 leading-10">
+              Thanks for <wbr />
+              subscribing!
+            </h2>
+            <p>
+              A confirmation email has been sent to
+              <span class="user-email font-bold">ash@loremcompany.com</span>.
+              Please open it and click the button inside to confirm your
+              subscription.
+            </p>
+          </div>
+        </div>
+        <button class="btn-1 hover:btn-anim-1">
+          <p class="font-bold text-white">Dismiss message</p>
+        </button>
+      </div>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
+
+<!-- Sign-up form start -->
+
+<!-- Sign-up form end -->
+
+<!-- Success message start -->
+
+<!--Thanks for subscribing! A confirmation email has been sent to
+ash@loremcompany.com. Please open it and click the button inside to confirm your
+subscription. Dismiss message-->
+
+<!-- Success message end -->

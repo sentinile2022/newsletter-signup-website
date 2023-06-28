@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*:focus-visible {
+  outline: none;
+}
+
+body {
+  font-family: "Roboto";
+  box-sizing: border-box;
+  @apply text-darkBlue;
+}
+* {
+  box-sizing: inherit;
+  background-color: transparent;
+}
+
+@layer components {
+  .btn-1 {
+    @apply flex w-full bg-darkBlue place-content-center rounded-[10px] pb-20 pt-20 font-bold;
+  }
+
+  .invalid-input {
+    border: solid;
+    @apply relative border-lightOrange text-lightOrange bg-opacity-30 bg-lightOrange;
+  }
+  .invalid-input::before {
+    content: "valid email required";
+    @apply absolute text-lightOrange text-xs font-bold;
+    top: -30px;
+    right: 0;
+  }
+}
+
+@layer utilities {
+  .btn-anim-1 {
+    transform: scale(1.05);
+    background-image: linear-gradient(
+      90deg,
+      hsl(4, 100%, 67%),
+      hsl(15, 100%, 67%)
+    );
+    box-shadow: -1px black;
+    transition: all 0.25s;
+  }
+  .hidden {
+    display: none !important;
+  }
+}
